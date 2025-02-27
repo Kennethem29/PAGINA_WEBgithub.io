@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth - Programación Estructurada y POO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Kenneth</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#programacion-estructurada">Programación Estructurada</a></li>
+                    <li><a href="#poo">POO</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Bienvenido a mi Página de Programación</h2>
+                <p>Explora los conceptos esenciales de Programación Estructurada y Programación Orientada a Objetos (POO).</p>
+                <a href="#programacion-estructurada" class="btn animacion-boton">Comenzar</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" alt="Programación" class="animacion-imagen">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Programación Estructurada -->
+    <section id="programacion-estructurada" class="programacion-estructurada">
+        <div class="container">
+            <h2>Programación Estructurada</h2>
+            <div class="programacion-grid">
+                <div class="programacion-card">
+                    <h3>¿Qué es la Programación Estructurada?</h3>
+                    <p>La programación estructurada es un paradigma que busca mejorar la claridad, calidad y tiempo de desarrollo de un programa mediante el uso de estructuras de control como secuencias, selecciones (if/else) y repeticiones (bucles).</p>
+
+                    <h4>Puntos Clave</h4>
+                    <ul>
+                        <li><strong>Secuencias:</strong> Ejecución de instrucciones en orden.</li>
+                        <li><strong>Selecciones:</strong> Uso de condicionales (if/else) para tomar decisiones.</li>
+                        <li><strong>Repeticiones:</strong> Uso de bucles (for, while) para repetir acciones.</li>
+                        <li><strong>Funciones:</strong> Bloques de código reutilizables.</li>
+                    </ul>
+
+                    <h4>Ejemplos de Código en C#</h4>
+
+                    <h5>Secuencias</h5>
+                    <p>Las secuencias son la ejecución de instrucciones en orden. En C#, esto se logra simplemente escribiendo las líneas de código una después de la otra.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Program {
+    static void Main() {
+        string nombre = "Juan";
+        int edad = 25;
+
+        Console.WriteLine("Nombre: " + nombre);
+        Console.WriteLine("Edad: " + edad);
+    }
+}
+                    </code></pre>
+
+                    <h5>Selecciones (if/else)</h5>
+                    <p>Las selecciones permiten tomar decisiones en el código. En C#, se utiliza la estructura <code>if/else</code> para evaluar condiciones.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Program {
+    static void Main() {
+        int edad = 18;
+
+        if (edad >= 18) {
+            Console.WriteLine("Eres mayor de edad.");
+        } else {
+            Console.WriteLine("Eres menor de edad.");
+        }
+    }
+}
+                    </code></pre>
+
+                    <h5>Repeticiones (bucles)</h5>
+                    <p>Los bucles permiten repetir acciones. En C#, se pueden usar bucles <code>for</code>, <code>while</code> o <code>do-while</code>.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Program {
+    static void Main() {
+        for (int i = 0; i < 5; i++) {
+            Console.WriteLine("Iteración: " + i);
+        }
+    }
+}
+                    </code></pre>
+
+                    <h5>Funciones</h5>
+                    <p>Las funciones son bloques de código reutilizables. En C#, se definen usando la palabra clave <code>static</code> (para métodos de clase) o sin ella (para métodos de instancia).</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Program {
+    static int Sumar(int a, int b) {
+        return a + b;
+    }
+
+    static void Main() {
+        Console.WriteLine("Suma: " + Sumar(10, 20));
+    }
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Programación Orientada a Objetos (POO) -->
+    <section id="poo" class="poo">
+        <div class="container">
+            <h2>Programación Orientada a Objetos (POO)</h2>
+            <div class="programacion-grid">
+                <div class="programacion-card">
+                    <h3>¿Qué es la Programación Orientada a Objetos?</h3>
+                    <p>La POO es un paradigma de programación que organiza el software en torno a "objetos", que son instancias de "clases". Estos objetos contienen datos (atributos) y comportamientos (métodos).</p>
+
+                    <h4>Puntos Clave</h4>
+                    <ul>
+                        <li><strong>Clases y Objetos:</strong> Las clases son plantillas, y los objetos son instancias de esas plantillas.</li>
+                        <li><strong>Herencia:</strong> Permite crear nuevas clases a partir de otras existentes.</li>
+                        <li><strong>Polimorfismo:</strong> Los objetos pueden tomar múltiples formas.</li>
+                        <li><strong>Encapsulamiento:</strong> Ocultar los detalles internos de un objeto.</li>
+                        <li><strong>Abstracción:</strong> Simplificar la complejidad al modelar solo los aspectos relevantes.</li>
+                    </ul>
+
+                    <h4>Ejemplos de Código en C#</h4>
+
+                    <h5>Clases y Objetos</h5>
+                    <p>Una clase es una plantilla que define las propiedades y comportamientos de un objeto. Un objeto es una instancia de una clase.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Persona {
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+
+    public Persona(string nombre, int edad) {
+        Nombre = nombre;
+        Edad = edad;
+    }
+
+    public void Saludar() {
+        Console.WriteLine("Hola, soy " + Nombre);
+    }
+}
+
+class Program {
+    static void Main() {
+        Persona juan = new Persona("Juan", 25);
+        juan.Saludar(); // Hola, soy Juan
+    }
+}
+                    </code></pre>
+
+                    <h5>Herencia</h5>
+                    <p>La herencia permite crear nuevas clases a partir de otras existentes. La clase derivada hereda los atributos y métodos de la clase base.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Animal {
+    public string Nombre { get; set; }
+
+    public Animal(string nombre) {
+        Nombre = nombre;
+    }
+
+    public virtual void HacerSonido() {
+        Console.WriteLine("Sonido genérico");
+    }
+}
+
+class Perro : Animal {
+    public Perro(string nombre) : base(nombre) {}
+
+    public override void HacerSonido() {
+        Console.WriteLine("Guau guau");
+    }
+}
+
+class Program {
+    static void Main() {
+        Perro miPerro = new Perro("Rex");
+        miPerro.HacerSonido(); // Guau guau
+    }
+}
+                    </code></pre>
+
+                    <h5>Polimorfismo</h5>
+                    <p>El polimorfismo permite que un objeto se comporte de múltiples formas. En C#, se logra mediante la sobrescritura de métodos.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class Animal {
+    public virtual void HacerSonido() {
+        Console.WriteLine("Sonido genérico");
+    }
+}
+
+class Perro : Animal {
+    public override void HacerSonido() {
+        Console.WriteLine("Guau guau");
+    }
+}
+
+class Program {
+    static void Main() {
+        Animal miAnimal = new Animal();
+        Animal miPerro = new Perro();
+
+        miAnimal.HacerSonido(); // Sonido genérico
+        miPerro.HacerSonido();  // Guau guau
+    }
+}
+                    </code></pre>
+
+                    <h5>Encapsulamiento</h5>
+                    <p>El encapsulamiento oculta los detalles internos de un objeto. En C#, se logra usando modificadores de acceso como <code>private</code>.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+class CuentaBancaria {
+    private double saldo;
+
+    public void Depositar(double monto) {
+        if (monto > 0) {
+            saldo += monto;
+        }
+    }
+
+    public double ObtenerSaldo() {
+        return saldo;
+    }
+}
+
+class Program {
+    static void Main() {
+        CuentaBancaria cuenta = new CuentaBancaria();
+        cuenta.Depositar(1000);
+        Console.WriteLine("Saldo: " + cuenta.ObtenerSaldo());
+    }
+}
+                    </code></pre>
+
+                    <h5>Abstracción</h5>
+                    <p>La abstracción simplifica la complejidad al modelar solo los aspectos relevantes. En C#, se logra usando clases abstractas o interfaces.</p>
+                    <pre><code>
+// Ejemplo en C#
+using System;
+
+abstract class Vehiculo {
+    public abstract void Mover();
+}
+
+class Coche : Vehiculo {
+    public override void Mover() {
+        Console.WriteLine("El coche se mueve.");
+    }
+}
+
+class Program {
+    static void Main() {
+        Vehiculo miCoche = new Coche();
+        miCoche.Mover(); // El coche se mueve.
+    }
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn animacion-boton">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Kenneth. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
